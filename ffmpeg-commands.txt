@@ -1,0 +1,1 @@
+ffmpeg -f image2 -framerate 30 -i ./frames/sketch-%05d.png -c:v libx264 -vf negate -pix_fmt yuv420p ./video-renders/goya.mp4
